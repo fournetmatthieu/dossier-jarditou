@@ -7,7 +7,7 @@ let commandeBtn = document.getElementById("commande");
 
 // calcul nombre de jeune et de vieux
 const vieux = () => {
-    window.alert("Cette fonction classe les ages que vous rentrer en 3 catégories, inferieur a 20 ans (jeunes), entre 20 et 40 ans (adultes) et les plus de 40 ans (vieux) cette fonctions s'arrete des lors que l'age que vous donner dépasse 100 ans")
+    window.alert("Cette fonction classe les âges que vous rentrer en 3 catégories, \ninférieur a 20 ans (jeunes), \nentre 20 et 40 ans (adultes) \net les plus de 40 ans (vieux) \ncette fonction s'arrête dès lors que l'âge que vous donner dépasse 100 ans.")
     let age = 0;
     let nb_jeune = 0;
     let nb_adulte = 0;
@@ -16,7 +16,7 @@ const vieux = () => {
 
 
     while (age < 100) {
-        age = parseInt(prompt("Quelle est l'age de la personne ?"));
+        age = parseInt(prompt("Entrez un âge celui de votre choix pour le classer dans l'une des 3 catégorie\n(la saisie s'arrête lorsque vous saisissez un âge supérieur ou egale 100 ans \nvous pouvez aussi cliquer sur annuler, mais cela contera un vieux en plus.)"));
 
         if (age < 20) {
             nb_jeune++;
@@ -26,7 +26,7 @@ const vieux = () => {
             nb_vieux++;
         }
     }
-    window.alert("il y a tant de jeunes : " + nb_jeune + "\n il y a tant de personne de plus de 20 ans : " + nb_adulte + "\n et il y a tant de vieux : " + nb_vieux)
+    window.alert("il y a tant de jeunes : " + nb_jeune + "\n il y a tant d'adulte : " + nb_adulte + "\n et il y a tant de vieux : " + nb_vieux)
 
 }
 
@@ -42,7 +42,7 @@ const vieux = () => {
 
 // table de multiplication
 function multiple() {
-    window.alert("Cette fonction vous affiche la table de multiplication que vous voulez");
+    window.alert("Cette fonction vous affiche la table de multiplication que vous voulez \n(Veuillez s'il vous plaît réactualiser la page avant de recommencer.)");
 
     let N = Number(window.prompt("Veuillez entrez votre table de multiplication", ""));
     while (isNaN(N)) {
@@ -62,7 +62,7 @@ function multiple() {
 
 // nom dans le tableau
 const tableau = () => {
-        window.alert("cette fonction est un tableau dans lequel il y a des noms une fois qu'un de ses noms a etait rentré il est supprimer du tableau qui sera alors afficher dans la console de votre navigateur visible en appuyant sur la touche F12 de votre clavier")
+        window.alert("Cette fonction est un tableau dans lequel il y a des noms une fois qu'un de ses noms a était rentré il est supprimé du tableau qui sera alors afficher dans la console de votre navigateur visible en appuyant sur la touche F12 de votre clavier")
         let tab = ["audrey", "aurelien", "flavien", "jeremy", "laurent", "melik", "nouara", "salem", "samuel", "stephane"];
         let saisie = window.prompt(`
             Veuillez choisir un prénom. parmi : "audrey", "aurelien", "flavien", "jeremy", "laurent", "melik", "nouara", "salem", "samuel", "stephane"
@@ -89,7 +89,7 @@ const tableau = () => {
     }
     // calcul prix de la commande
 const commande = () => {
-    window.alert("Cette fonction calcul pour vous le prix d'une commande avec ces remises et ces frais de port(port gratuit si supérieur a 500€ en dessous 2% du total et un minimum de 6€; remise de 5% si total compris entre 100€ et 200€ pas de remise en dessous et remise de 10% au dessus.")
+    window.alert("Cette fonction calcul pour vous le prix d'une commande avec ses remises et ses frais de port\n(Port gratuit si supérieur a 500 € \nen dessous le port est égale à 2 % du total et un minimum de 6 €; \nremise de 5 % si total compris entre 100 € et 200 € \npas de remise en dessous et remise de 10 % au-dessus).")
     let PU = parseFloat(prompt('Prix unitaire'));
     let QTECOM = parseInt(prompt('Quantité commandée'));
     let TOT = PU * QTECOM;
